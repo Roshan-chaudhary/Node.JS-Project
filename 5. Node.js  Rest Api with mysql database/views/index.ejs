@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data</title>
+</head>
+<body>
+    <h1>API Data</h1>
+    <ul>
+        <% apiData.forEach(item => { %>
+            <li>
+                <h2><%= item.item %></h2>
+                <p>Price: <%= item.price %></p>
+                <p>Description: <%= item.des %></p>
+                <img src="<%= item.image %>" alt="<%= item.item %> Image" width="200" height="200">
+                <a href="<%=item.image %>" >View Image</a>
+                
+
+
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
